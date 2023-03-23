@@ -13,9 +13,6 @@ def encode(password):
     return result
 
 
-#def decode(password, result):
-   # print("The encoded password is " + result + ", and the original password is " + password + ".")
-
 def decode(code):
     og_pwd = ""
     if len(code) == 8:
@@ -44,7 +41,8 @@ def main():
             print('Your password has been encoded and stored!')
 
         elif option == 2:
-            decode(password, result)
+            dec_password = decode()
+            print("The encoded password is " + result + ", and the original password is " + password + ".")
 
         elif option == 3:
             break

@@ -16,6 +16,13 @@ def encode(password):
 #def decode(password, result):
    # print("The encoded password is " + result + ", and the original password is " + password + ".")
 
+def decode(code):
+    og_pwd = ""
+    if len(code) == 8:
+        for i in range(len(code)):
+            s = int(code[i])-3
+            og_pwd += str(s)
+    return og_pwd
 
 def main():
     encoding = True
